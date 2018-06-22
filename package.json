@@ -1,29 +1,14 @@
 {
   "name": "ng-bootstrap-modal-stack",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Modal stack for ng-bootstrap",
   "keywords": [
     "angular",
     "bootstrap",
-    "components",
-    "accordion",
-    "alert",
-    "buttons",
-    "carousel",
-    "collapse",
-    "datepicker",
-    "dropdown",
     "modal",
-    "pagination",
-    "popover",
-    "progressbar",
-    "rating",
-    "tabset",
-    "timepicker",
-    "tooltip",
-    "typeahead"
+    "stack"
   ],
-  "author": "https://github.com/ng-bootstrap/ng-bootstrap/graphs/contributors",
+  "author": "https://github.com/bastienmoulia",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8.9.0 <9.0.0",
@@ -37,13 +22,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ng-bootstrap/ng-bootstrap.git"
+    "url": "git+https://github.com/bastienmoulia/ng-bootstrap-modal-stack/.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ng-bootstrap/ng-bootstrap/issues"
+    "url": "https://github.com/bastienmoulia/ng-bootstrap-modal-stack//issues"
   },
-  "homepage": "https://github.com/ng-bootstrap/ng-bootstrap#readme",
+  "homepage": "https://github.com/bastienmoulia/ng-bootstrap-modal-stack/#readme",
   "dependencies": {
     "@angular/common": "5.0.2",
     "@angular/core": "5.0.2",

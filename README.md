@@ -34,36 +34,36 @@ View all the directives in action at https://ng-bootstrap.github.io
 * [Bootstrap 4](https://www.getbootstrap.com) (tested with 4.0.0)
 
 ## Installation
-After installing the above dependencies, install `ng-bootstrap` via:
+After installing the above dependencies, install `ng-bootstrap-modal-stack` via:
 ```shell
-npm install --save @ng-bootstrap/ng-bootstrap
+npm install --save ng-bootstrap-modal-stack
 ```
 Once installed you need to import our main module:
 ```js
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModalStackModule} from 'ng-bootstrap-modal-stack';
 ```
 The only remaining part is to list the imported module in your application module. The exact method will be slightly
-different for the root (top-level) module for which you should end up with the code similar to (notice `NgbModule.forRoot()`):
+different for the root (top-level) module for which you should end up with the code similar to (notice `NgbModalStackModule.forRoot()`):
 ```js
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from 'ng-bootstrap-modal-stack';
 
 @NgModule({
   declarations: [AppComponent, ...],
-  imports: [NgbModule.forRoot(), ...],  
+  imports: [NgbModalStackModule.forRoot(), ...],  
   bootstrap: [AppComponent]
 })
 export class AppModule {
 }
 ```
 
-Other modules in your application can simply import `NgbModule`:
+Other modules in your application can simply import `NgbModalStackModule`:
 
 ```js
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from 'ng-bootstrap-modal-stack';
 
 @NgModule({
   declarations: [OtherComponent, ...],
-  imports: [NgbModule, ...], 
+  imports: [NgbModalStackModule, ...], 
 })
 export class OtherModule {
 }
@@ -72,10 +72,10 @@ export class OtherModule {
 ### SystemJS
 If you are using SystemJS, you should also adjust your configuration to point to the UMD bundle.
 
-In your systemjs config file, `map` needs to tell the System loader where to look for `ng-bootstrap`:
+In your systemjs config file, `map` needs to tell the System loader where to look for `ng-bootstrap-modal-stack`:
 ```js
 map: {
-  '@ng-bootstrap/ng-bootstrap': 'node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
+  'ng-bootstrap-modal-stack': 'node_modules/ng-bootstrap-modal-stack/bundles/ng-bootstrap.js',
 }
 ```
 ## Supported browsers

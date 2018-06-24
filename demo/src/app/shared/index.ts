@@ -4,7 +4,9 @@ import {RouterModule} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
-import {NgbModalStackModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModalStackModule} from 'ng-bootstrap-modal-stack';
+
+import {NgbModule} from 'ng-bootstrap/src';
 
 import {ComponentWrapper} from './component-wrapper/component-wrapper.component';
 import {PageWrapper} from './page-wrapper/page-wrapper.component';
@@ -17,7 +19,7 @@ import {CodeHighlightService} from './code/code-highlight.service';
 export {componentsList} from './side-nav/side-nav.component';
 
 @NgModule({
-  imports: [CommonModule, RouterModule, NgbModalStackModule],
+  imports: [CommonModule, RouterModule, NgbModalStackModule, NgbModule],
   exports: [
     CommonModule,
     RouterModule,

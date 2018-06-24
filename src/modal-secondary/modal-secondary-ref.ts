@@ -1,4 +1,4 @@
-import { NgbActiveModal, NgbModalRef } from '../modal/modal-ref';
+import {NgbActiveModal, NgbModalRef} from '../modal/modal-ref';
 
 /**
  * A reference to an active (currently opened) modal. Instances of this class

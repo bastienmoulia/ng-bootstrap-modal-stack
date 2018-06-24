@@ -11,7 +11,12 @@ import {
 import {CommonModule} from '@angular/common';
 import {TestBed, ComponentFixture} from '@angular/core/testing';
 
-import {NgbModalSecondaryModule, NgbModalSecondary, NgbActiveModalSecondary, NgbModalSecondaryRef} from './modal-secondary.module';
+import {
+  NgbModalSecondaryModule,
+  NgbModalSecondary,
+  NgbActiveModalSecondary,
+  NgbModalSecondaryRef
+} from './modal-secondary.module';
 
 const NOOP = () => {};
 
@@ -25,7 +30,7 @@ class CustomSpyService {
   called = false;
 }
 
-describe('ngb-modal', () => {
+describe('ngb-modal-secondary', () => {
 
   let fixture: ComponentFixture<TestComponent>;
 

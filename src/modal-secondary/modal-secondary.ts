@@ -1,7 +1,7 @@
 import {Injectable, Injector, ComponentFactoryResolver} from '@angular/core';
-import { NgbModal, NgbModalOptions } from '../modal/modal';
+import {NgbModal, NgbModalOptions} from '../modal/modal';
 
-import { NgbModalSecondaryStack } from './modal-secondary-stack';
+import {NgbModalSecondaryStack} from './modal-secondary-stack';
 
 /**
  * Represent options available when opening new modal windows.
@@ -15,7 +15,8 @@ export interface NgbModalSecondaryOptions extends NgbModalOptions {}
 @Injectable()
 export class NgbModalSecondary extends NgbModal {
   constructor(
-    private moduleCFR: ComponentFactoryResolver, private injector: Injector, private modalStack: NgbModalSecondaryStack) {
-      super(moduleCFR, injector, <any>modalStack);
-    }
+      private moduleCFR: ComponentFactoryResolver, private injector: Injector,
+      private modalStack: NgbModalSecondaryStack) {
+    super(moduleCFR, injector, <any>modalStack);
+  }
 }

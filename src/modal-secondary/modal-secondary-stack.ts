@@ -45,7 +45,8 @@ export class NgbModalSecondaryStack {
         options.backdrop !== false ? this._attachBackdrop(containerEl) : null;
     let windowCmptRef: ComponentRef<NgbModalSecondaryWindow> = this._attachWindowComponent(containerEl, contentRef);
     // tslint:disable-next-line:max-line-length
-    let ngbModalRef: NgbModalSecondaryRef = new NgbModalSecondaryRef(<any>windowCmptRef, contentRef, backdropCmptRef, options.beforeDismiss);
+    let ngbModalRef: NgbModalSecondaryRef =
+        new NgbModalSecondaryRef(<any>windowCmptRef, contentRef, backdropCmptRef, options.beforeDismiss);
 
     activeModal.close = (result: any) => { ngbModalRef.close(result); };
     activeModal.dismiss = (reason: any) => { ngbModalRef.dismiss(reason); };

@@ -10,7 +10,7 @@
     "sourceMap": true,
     "baseUrl": "./node_modules",
     "paths": {
-      "@ng-bootstrap/ng-bootstrap": ["../src/index"]
+      "ng-bootstrap-modal-stack": ["../src/index"]
     }
   },
   "include": [

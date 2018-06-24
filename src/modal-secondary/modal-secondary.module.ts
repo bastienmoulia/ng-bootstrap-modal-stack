@@ -16,5 +16,7 @@ export {ModalDismissReasons} from './modal-secondary-dismiss-reasons';
 })
 export class NgbModalSecondaryModule {
   // tslint:disable-next-line:max-line-length
-  static forRoot(): ModuleWithProviders { return {ngModule: NgbModalSecondaryModule, providers: [NgbModalSecondary, NgbModalSecondaryStack]}; }
+  static forRoot(): ModuleWithProviders {
+    return {ngModule: NgbModalSecondaryModule, providers: [NgbModalSecondary, NgbModalSecondaryStack]};
+  }
 }

@@ -3,7 +3,7 @@ import {TestBed, ComponentFixture} from '@angular/core/testing';
 import {NgbModalSecondaryWindow} from './modal-secondary-window';
 import {ModalDismissReasons} from './modal-secondary-dismiss-reasons';
 
-describe('ngb-modal-dialog', () => {
+describe('ngb-modal-secondary-dialog', () => {
 
   let fixture: ComponentFixture<NgbModalSecondaryWindow>;
 
@@ -21,6 +21,7 @@ describe('ngb-modal-dialog', () => {
       const dialogEl: Element = fixture.nativeElement.querySelector('.modal-dialog');
 
       expect(modalEl).toHaveCssClass('modal');
+      expect(modalEl).toHaveCssClass('modal-secondary');
       expect(dialogEl).toHaveCssClass('modal-dialog');
     });
 

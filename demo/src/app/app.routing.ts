@@ -3,117 +3,21 @@ import {ModuleWithProviders} from '@angular/core';
 import {DefaultComponent} from './default';
 import {GettingStarted} from './getting-started';
 import {
-  NgbdAlert,
-  NgbdButtons,
-  NgbdCarousel,
-  NgbdCollapse,
-  NgbdDatepicker,
-  NgbdDropdown,
+
   NgbdModal,
-  NgbdPagination,
-  NgbdPopover,
-  NgbdProgressbar,
-  NgbdRating,
-  NgbdTabs,
-  NgbdTimepicker,
-  NgbdTooltip,
-  NgbdTypeahead
+
 } from './components';
 import {DEFAULT_TAB} from './shared/component-wrapper/component-wrapper.component';
 
 const DEFAULT_API_PATH = {path: '', pathMatch: 'full', redirectTo: DEFAULT_TAB};
 
-const componentRoutes = [/*{
-    path: 'components/alert',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdAlert}
-    ]
-  }, {
-    path: 'components/buttons',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdButtons}
-    ]
-  }, {
-    path: 'components/carousel',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdCarousel}
-    ]
-  }, {
-    path: 'components/collapse',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdCollapse}
-    ]
-  }, {
-    path: 'components/datepicker',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdDatepicker}
-    ]
-  }, {
-    path: 'components/dropdown',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdDropdown}
-    ]
-  }, */{
+const componentRoutes = [{
     path: 'components/modal',
     children: [
       DEFAULT_API_PATH,
       {path: ':tab', component: NgbdModal}
     ]
-  }/*, {
-    path: 'components/pagination',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdPagination}
-    ]
-  }, {
-    path: 'components/popover',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdPopover}
-    ]
-  }, {
-    path: 'components/progressbar',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdProgressbar}
-    ]
-  }, {
-    path: 'components/rating',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdRating}
-    ]
-  }, {
-    path: 'components/tabs',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdTabs}
-    ]
-  }, {
-    path: 'components/timepicker',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdTimepicker}
-    ]
-  }, {
-    path: 'components/tooltip',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdTooltip}
-    ]
-  }, {
-    path: 'components/typeahead',
-    children: [
-      DEFAULT_API_PATH,
-      {path: ':tab', component: NgbdTypeahead}
-    ]
-  }*/
+  }
 ];
 
 const routes: Routes = [

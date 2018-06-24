@@ -1,7 +1,8 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
-import {NgbModalStackModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModalStackModule} from 'ng-bootstrap-modal-stack';
+import {NgbModule} from 'ng-bootstrap/src';
 
 import {DefaultComponent} from './default';
 import {GettingStarted} from './getting-started';
@@ -19,6 +20,7 @@ import {NgbdSharedModule} from './shared';
   imports: [
     BrowserModule,
     routing,
+    NgbModule.forRoot(),
     NgbModalStackModule.forRoot(),
     NgbdDemoModule,
     NgbdSharedModule

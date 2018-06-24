@@ -1,51 +1,13 @@
 import {NgModule, ModuleWithProviders} from '@angular/core';
 
-// import {NgbAccordionModule, NgbPanelChangeEvent} from './accordion/accordion.module';
-/*mport {NgbAlertModule} from './alert/alert.module';
-import {NgbButtonsModule} from './buttons/buttons.module';
-import {NgbCarouselModule} from './carousel/carousel.module';
-import {NgbCollapseModule} from './collapse/collapse.module';
-import {NgbDatepickerModule} from './datepicker/datepicker.module';
-import {NgbDropdownModule} from './dropdown/dropdown.module';*/
 import {NgbModalModule, NgbModal, NgbModalOptions, NgbModalRef, ModalDismissReasons} from './modal/modal.module';
-// tslint:disable-next-line:max-line-length
-import {NgbModalSecondaryModule, NgbModalSecondary, NgbModalSecondaryOptions, NgbModalSecondaryRef} from './modal-secondary/modal-secondary.module';
-/*import {NgbPaginationModule} from './pagination/pagination.module';
-import {NgbPopoverModule} from './popover/popover.module';
-import {NgbProgressbarModule} from './progressbar/progressbar.module';
-import {NgbRatingModule} from './rating/rating.module';
-import {NgbTabsetModule, NgbTabChangeEvent} from './tabset/tabset.module';
-import {NgbTimepickerModule} from './timepicker/timepicker.module';
-import {NgbTooltipModule} from './tooltip/tooltip.module';
-import {NgbTypeaheadModule, NgbTypeaheadSelectItemEvent} from './typeahead/typeahead.module';*/
+import {
+  NgbModalSecondaryModule,
+  NgbModalSecondary,
+  NgbModalSecondaryOptions,
+  NgbModalSecondaryRef
+} from './modal-secondary/modal-secondary.module';
 
-/*export {
-  NgbAccordionModule,
-  NgbPanelChangeEvent,
-  NgbAccordionConfig,
-  NgbAccordion,
-  NgbPanel,
-  NgbPanelTitle,
-  NgbPanelContent
-} from './accordion/accordion.module';*/
-/*export {NgbAlertModule, NgbAlertConfig, NgbAlert} from './alert/alert.module';
-export {NgbButtonsModule, NgbCheckBox, NgbRadioGroup} from './buttons/buttons.module';
-export {NgbCarouselModule, NgbCarouselConfig, NgbCarousel, NgbSlide} from './carousel/carousel.module';
-export {NgbCollapseModule, NgbCollapse} from './collapse/collapse.module';
-export {
-  NgbCalendar,
-  NgbCalendarIslamicCivil,
-  NgbCalendarIslamicUmalqura,
-  NgbDatepickerModule,
-  NgbDatepickerI18n,
-  NgbDatepickerConfig,
-  NgbDateStruct,
-  NgbDateParserFormatter,
-  NgbDateAdapter,
-  NgbDatepicker,
-  NgbInputDatepicker
-} from './datepicker/datepicker.module';
-export {NgbDropdownModule, NgbDropdownConfig, NgbDropdown} from './dropdown/dropdown.module';*/
 export {
   NgbModalModule,
   NgbModal,
@@ -61,47 +23,10 @@ export {
   NgbActiveModalSecondary,
   NgbModalSecondaryRef
 } from './modal-secondary/modal-secondary.module';
-/*export {NgbPaginationModule, NgbPaginationConfig, NgbPagination} from './pagination/pagination.module';
-export {NgbPopoverModule, NgbPopoverConfig, NgbPopover} from './popover/popover.module';
-export {NgbProgressbarModule, NgbProgressbarConfig, NgbProgressbar} from './progressbar/progressbar.module';
-export {NgbRatingModule, NgbRatingConfig, NgbRating} from './rating/rating.module';
-export {
-  NgbTabsetModule,
-  NgbTabChangeEvent,
-  NgbTabsetConfig,
-  NgbTabset,
-  NgbTab,
-  NgbTabContent,
-  NgbTabTitle
-} from './tabset/tabset.module';
-export {NgbTimepickerModule, NgbTimepickerConfig, NgbTimeStruct, NgbTimepicker} from './timepicker/timepicker.module';
-export {NgbTooltipModule, NgbTooltipConfig, NgbTooltip} from './tooltip/tooltip.module';
-export {
-  NgbHighlight,
-  NgbTypeaheadModule,
-  NgbTypeaheadConfig,
-  NgbTypeaheadSelectItemEvent,
-  NgbTypeahead
-} from './typeahead/typeahead.module';
 
-export {Placement} from './util/positioning';*/
+const NGB_MODULES = [NgbModalModule, NgbModalSecondaryModule];
 
-const NGB_MODULES = [
-  /*NgbAlertModule, NgbButtonsModule, NgbCarouselModule, NgbCollapseModule, NgbDatepickerModule,
-  NgbDropdownModule, */NgbModalModule, NgbModalSecondaryModule/*, NgbPaginationModule, NgbPopoverModule, NgbProgressbarModule, NgbRatingModule,
-  NgbTabsetModule, NgbTimepickerModule, NgbTooltipModule, NgbTypeaheadModule*/
-];
-
-@NgModule({
-  imports: [
-    /*NgbAlertModule.forRoot(), NgbButtonsModule.forRoot(), NgbCollapseModule.forRoot(), NgbProgressbarModule.forRoot(),
-    NgbTooltipModule.forRoot(), NgbTypeaheadModule.forRoot(), NgbCarouselModule.forRoot(),
-    NgbDatepickerModule.forRoot(), NgbDropdownModule.forRoot(), */NgbModalModule.forRoot(), NgbModalSecondaryModule.forRoot()/*,
-    NgbPaginationModule.forRoot(), NgbPopoverModule.forRoot(), NgbProgressbarModule.forRoot(), NgbRatingModule.forRoot(),
-    NgbTabsetModule.forRoot(), NgbTimepickerModule.forRoot(), NgbTooltipModule.forRoot()*/
-  ],
-  exports: NGB_MODULES
-})
+@NgModule({imports: [NgbModalModule.forRoot(), NgbModalSecondaryModule.forRoot()], exports: NGB_MODULES})
 export class NgbRootModule {
 }
 

@@ -2,7 +2,7 @@ import {TestBed} from '@angular/core/testing';
 
 import {NgbModalSecondaryBackdrop} from './modal-secondary-backdrop';
 
-describe('ngb-modal-backdrop', () => {
+describe('ngb-modal-secondary-backdrop', () => {
 
   beforeEach(() => { TestBed.configureTestingModule({declarations: [NgbModalSecondaryBackdrop]}); });
 
@@ -10,6 +10,6 @@ describe('ngb-modal-backdrop', () => {
     const fixture = TestBed.createComponent(NgbModalSecondaryBackdrop);
 
     fixture.detectChanges();
-    expect(fixture.nativeElement).toHaveCssClass('modal-backdrop');
+    expect(fixture.nativeElement).toHaveCssClass('modal-secondary-backdrop');
   });
 });

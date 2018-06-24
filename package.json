@@ -2,6 +2,7 @@
   "name": "ng-bootstrap-modal-stack",
   "version": "1.0.3",
   "description": "Modal stack for ng-bootstrap",
+  "private": true,
   "keywords": [
     "angular",
     "bootstrap",
@@ -17,6 +18,7 @@
   "scripts": {
     "preinstall": "node misc/preinstall.js",
     "test": "gulp",
+    "start": "gulp demo-server",
     "api-doc-tdd": "jasmine-node misc/api-doc.spec.js --autotest --watch misc/api-doc-test-cases/*.ts misc/api-doc.js",
     "api-doc-test": "jasmine-node misc/api-doc.spec.js"
   },

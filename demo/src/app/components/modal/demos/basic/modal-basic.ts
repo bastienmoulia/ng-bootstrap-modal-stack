@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
-import {NgbModal, NgbModalSecondary, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModal, ModalDismissReasons} from 'ng-bootstrap/src';
+import {NgbModalSecondary} from 'ng-bootstrap-modal-stack';
 
 @Component({
   selector: 'ngbd-modal-basic',

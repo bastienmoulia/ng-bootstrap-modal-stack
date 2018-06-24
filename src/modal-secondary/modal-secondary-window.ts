@@ -11,7 +11,7 @@ import {
   AfterViewInit,
   OnDestroy
 } from '@angular/core';
-import { ModalDismissReasons } from '../modal/modal-dismiss-reasons';
+import {ModalDismissReasons} from '../modal/modal-dismiss-reasons';
 
 @Component({
   selector: 'ngb-modal-secondary-window',

@@ -103,13 +103,14 @@ gulp.task('npm', function() {
   targetPkgJson['main'] = 'bundles/ng-bootstrap.js';
   targetPkgJson['module'] = 'index.js';
   targetPkgJson['typings'] = 'index.d.ts';
+  targetPkgJson['style'] = 'index.scss';
 
   targetPkgJson.peerDependencies = {};
   Object.keys(pkgJson.dependencies).forEach(function(dependency) {
     targetPkgJson.peerDependencies[dependency] = `^${pkgJson.dependencies[dependency]}`;
   });
 
-  return gulp.src(['README.md', 'LICENSE'])
+  return gulp.src(['README.md', 'LICENSE', 'src/index.scss'])
       .pipe(gulpFile('package.json', JSON.stringify(targetPkgJson, null, 2)))
       .pipe(gulp.dest('dist'));
 });

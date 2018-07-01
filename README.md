@@ -1,9 +1,8 @@
-# NG Bootstrap - [Angular](http://angular.io/) directives specific to [Bootstrap 4](https://getbootstrap.com/)
+# NG Bootstrap Modal Stack - Secondary Modal for [NG Bootstrap](https://ng-bootstrap.github.io/)
 
-[![npm version](https://badge.fury.io/js/%40ng-bootstrap%2Fng-bootstrap.svg)](https://badge.fury.io/js/%40ng-bootstrap%2Fng-bootstrap)
-[![Build Status](https://travis-ci.org/ng-bootstrap/ng-bootstrap.svg?branch=master)](https://travis-ci.org/ng-bootstrap/ng-bootstrap)
-[![devDependency Status](https://david-dm.org/ng-bootstrap/ng-bootstrap/dev-status.svg?branch=master)](https://david-dm.org/ng-bootstrap/ng-bootstrap#info=devDependencies)
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/pkozlowski.svg)](https://saucelabs.com/u/pkozlowski)
+[![npm version](https://badge.fury.io/js/ng-bootstrap-modal-stack.svg)](https://badge.fury.io/js/ng-bootstrap-modal-stack)
+[![Build Status](https://travis-ci.org/bastienmoulia/ng-bootstrap-modal-stack.svg?branch=master)](https://travis-ci.org/bastienmoulia/ng-bootstrap-modal-stack)
+[![devDependency Status](https://david-dm.org/bastienmoulia/ng-bootstrap-modal-stack/dev-status.svg?branch=master)](https://david-dm.org/bastienmoulia/ng-bootstrap-modal-stack#info=devDependencies)
 
 Welcome to the Angular version of the [Angular UI Bootstrap](https://github.com/angular-ui/bootstrap) library.
 This library is being built from scratch by the [ui-bootstrap team](https://github.com/angular-ui/bootstrap).
@@ -67,6 +66,12 @@ import {NgbModule} from 'ng-bootstrap-modal-stack';
 })
 export class OtherModule {
 }
+```
+### SCSS
+
+You need to import the custom scss for the secondary modal.
+```scss
+@import "~ng-bootstrap-modal-stack/index";
 ```
 
 ### SystemJS

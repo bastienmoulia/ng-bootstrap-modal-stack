@@ -1,6 +1,6 @@
 {
   "name": "ng-bootstrap-modal-stack",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Modal stack for ng-bootstrap",
   "private": true,
   "keywords": [
@@ -34,8 +34,7 @@
   "dependencies": {
     "@angular/common": "5.0.2",
     "@angular/core": "5.0.2",
-    "@angular/forms": "5.0.2",
-    "ng-bootstrap": "https://github.com/ng-bootstrap/ng-bootstrap/archive/1.1.2.tar.gz"
+    "@angular/forms": "5.0.2"
   },
   "devDependencies": {
     "@angular/compiler": "5.0.2",

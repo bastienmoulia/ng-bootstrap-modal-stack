@@ -1,16 +1,9 @@
 # NG Bootstrap Modal Stack - Secondary Modal for [NG Bootstrap](https://ng-bootstrap.github.io/)
 
 [![npm version](https://badge.fury.io/js/ng-bootstrap-modal-stack.svg)](https://badge.fury.io/js/ng-bootstrap-modal-stack)
-[![Build Status](https://travis-ci.org/bastienmoulia/ng-bootstrap-modal-stack.svg?branch=master)](https://travis-ci.org/bastienmoulia/ng-bootstrap-modal-stack)
 [![devDependency Status](https://david-dm.org/bastienmoulia/ng-bootstrap-modal-stack/dev-status.svg?branch=master)](https://david-dm.org/bastienmoulia/ng-bootstrap-modal-stack#info=devDependencies)
 
-Welcome to the Angular version of the [Angular UI Bootstrap](https://github.com/angular-ui/bootstrap) library.
-This library is being built from scratch by the [ui-bootstrap team](https://github.com/angular-ui/bootstrap).
-We are using TypeScript and targeting the Bootstrap 4 CSS framework.
-
-As with Bootstrap 4, this library is a work in progress. Please check out our list of
-[issues](https://github.com/ng-bootstrap/ng-bootstrap/issues) to see all the things we are implementing.
-Feel free to make comments there.
+This project is a workaround to display a secondary modal on top of the one from [NG Bootstrap](https://ng-bootstrap.github.io/).
 
 ## Table of Contents
 
@@ -26,7 +19,7 @@ Feel free to make comments there.
 
 ## Demo
 
-View all the directives in action at https://ng-bootstrap.github.io
+View it in action : https://stackblitz.com/edit/ng-bootstrap-modal-stack
 
 ## Dependencies
 * [Angular](https://angular.io) (tested with 5.0.2)
